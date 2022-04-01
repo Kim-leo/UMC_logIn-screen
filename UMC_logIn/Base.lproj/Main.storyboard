@@ -53,6 +53,11 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그인"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRZ-ns-4MS"/>
                                 </connections>
@@ -142,6 +147,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jKK-8L-KLN"/>
+                    <connections>
+                        <outlet property="registerButton" destination="mIw-1J-oXY" id="4tA-Sq-ofq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,19 +164,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catstagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Vk3-ps-cMH">
-                                <rect key="frame" x="79.666666666666671" y="44" width="254.66666666666663" height="101"/>
+                                <rect key="frame" x="79.666666666666671" y="88" width="254.66666666666663" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Vk3-ps-cMH" secondAttribute="height" multiplier="48:19" id="cGQ-cC-aZe"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구들의 사진과 동영상을 보려면 가입하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxk-Cu-Isw">
-                                <rect key="frame" x="93" y="165" width="228" height="15.666666666666657"/>
+                                <rect key="frame" x="93" y="209" width="228" height="15.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpF-uI-Wb7">
-                                <rect key="frame" x="10" y="205.66666666666666" width="394" height="35"/>
+                                <rect key="frame" x="10" y="249.66666666666663" width="394" height="35"/>
                                 <color key="backgroundColor" name="facebookColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="05x-zM-qh3"/>
@@ -178,22 +186,27 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="또는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWK-nf-hZ1">
-                                <rect key="frame" x="195.66666666666666" y="275.66666666666669" width="22.666666666666657" height="15.666666666666686"/>
+                                <rect key="frame" x="195.66666666666666" y="319.66666666666669" width="22.666666666666657" height="15.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRO-Lj-de2">
-                                <rect key="frame" x="10" y="283" width="170.66666666666666" height="1"/>
+                                <rect key="frame" x="10" y="327" width="170.66666666666666" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="zDO-fM-RqA"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n2U-2x-ut3">
-                                <rect key="frame" x="10" y="328" width="394" height="166"/>
+                                <rect key="frame" x="10" y="372" width="394" height="166"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="휴대폰번호 또는 이메일주소" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KGO-MN-iyY">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
@@ -218,7 +231,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tp4-Ws-l9i">
-                                <rect key="frame" x="10" y="519" width="394" height="45"/>
+                                <rect key="frame" x="10" y="563" width="394" height="45"/>
                                 <color key="backgroundColor" name="disabledButtonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="P6v-Y0-kHQ"/>
@@ -227,6 +240,11 @@
                                 <buttonConfiguration key="configuration" style="plain" title="가입">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHN-bz-Ohe">
                                 <rect key="frame" x="136.66666666666666" y="834.66666666666663" width="140.99999999999997" height="27.333333333333371"/>
@@ -243,7 +261,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ni6-bw-WFE">
-                                <rect key="frame" x="233.33333333333337" y="283" width="170.66666666666663" height="1"/>
+                                <rect key="frame" x="233.33333333333337" y="327" width="170.66666666666663" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="hJl-Vh-IHI"/>
@@ -284,12 +302,21 @@
                             <constraint firstItem="GF5-qJ-fTD" firstAttribute="trailing" secondItem="bpF-uI-Wb7" secondAttribute="trailing" constant="10" id="zoY-mj-L6P"/>
                         </constraints>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationItem key="navigationItem" id="obM-0g-VqO">
+                        <barButtonItem key="leftBarButtonItem" image="arrow.backward" catalog="system" id="QQm-YH-bkN">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backButtonDidTap:" destination="hNZ-9l-1cf" id="8YF-KN-2wT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="emailTextField" destination="KGO-MN-iyY" id="fCM-GE-cnX"/>
                         <outlet property="nameTextField" destination="bwI-4e-pwk" id="z3g-e1-gpo"/>
                         <outlet property="nicknameTextField" destination="JT9-Fb-Kkj" id="dG8-C5-hIY"/>
                         <outlet property="passwordTextField" destination="ozB-36-irx" id="kXW-Xh-Sm6"/>
+                        <outlet property="popToLoginButton" destination="DHN-bz-Ohe" id="cpp-w0-OSs"/>
                         <outlet property="signupButton" destination="tp4-Ws-l9i" id="lOG-uo-Ces"/>
                     </connections>
                 </viewController>
@@ -317,6 +344,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
         <namedColor name="AccentColor">

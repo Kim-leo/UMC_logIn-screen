@@ -15,6 +15,8 @@
 		7CA1F94427F6A240001B0AAF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1F94327F6A240001B0AAF /* ColorExtension.swift */; };
 		7CA1F94627F6A37D001B0AAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1F94527F6A37D001B0AAF /* LoginViewController.swift */; };
 		7CA1F94827F6CB2B001B0AAF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1F94727F6CB2B001B0AAF /* RegisterViewController.swift */; };
+		7CA1F94A27F6E098001B0AAF /* UiView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1F94927F6E097001B0AAF /* UiView+Extension.swift */; };
+		7CA1F94C27F6E191001B0AAF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1F94B27F6E191001B0AAF /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7CA1F94327F6A240001B0AAF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		7CA1F94527F6A37D001B0AAF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7CA1F94727F6CB2B001B0AAF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7CA1F94927F6E097001B0AAF /* UiView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Extension.swift"; sourceTree = "<group>"; };
+		7CA1F94B27F6E191001B0AAF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				7CA1F94327F6A240001B0AAF /* ColorExtension.swift */,
 				7CA1F94527F6A37D001B0AAF /* LoginViewController.swift */,
 				7CA1F94727F6CB2B001B0AAF /* RegisterViewController.swift */,
+				7CA1F94927F6E097001B0AAF /* UiView+Extension.swift */,
+				7CA1F94B27F6E191001B0AAF /* UIViewController+Extension.swift */,
 				7CA1F93527F56565001B0AAF /* Main.storyboard */,
 				7CA1F93827F56567001B0AAF /* Assets.xcassets */,
 				7CA1F93A27F56567001B0AAF /* LaunchScreen.storyboard */,
@@ -148,6 +154,8 @@
 				7CA1F94827F6CB2B001B0AAF /* RegisterViewController.swift in Sources */,
 				7CA1F93027F56565001B0AAF /* AppDelegate.swift in Sources */,
 				7CA1F93227F56565001B0AAF /* SceneDelegate.swift in Sources */,
+				7CA1F94C27F6E191001B0AAF /* UIViewController+Extension.swift in Sources */,
+				7CA1F94A27F6E098001B0AAF /* UiView+Extension.swift in Sources */,
 				7CA1F94427F6A240001B0AAF /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
