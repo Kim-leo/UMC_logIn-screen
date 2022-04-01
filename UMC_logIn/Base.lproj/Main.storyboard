@@ -290,6 +290,7 @@
                         <outlet property="nameTextField" destination="bwI-4e-pwk" id="z3g-e1-gpo"/>
                         <outlet property="nicknameTextField" destination="JT9-Fb-Kkj" id="dG8-C5-hIY"/>
                         <outlet property="passwordTextField" destination="ozB-36-irx" id="kXW-Xh-Sm6"/>
+                        <outlet property="signupButton" destination="tp4-Ws-l9i" id="lOG-uo-Ces"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3A-vy-nBG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
