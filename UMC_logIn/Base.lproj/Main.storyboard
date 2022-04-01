@@ -51,8 +51,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="5Ff-o9-TgT"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="로그인"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="로그인"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="5"/>
@@ -148,12 +148,87 @@
                     </view>
                     <navigationItem key="navigationItem" id="jKK-8L-KLN"/>
                     <connections>
+                        <outlet property="loginButton" destination="CYH-Pe-Izw" id="l0C-z7-Rkp"/>
                         <outlet property="registerButton" destination="mIw-1J-oXY" id="4tA-Sq-ofq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="958.46153846153845" y="69.66824644549763"/>
+        </scene>
+        <!--profile-->
+        <scene sceneID="iFJ-uk-Oam">
+            <objects>
+                <viewController id="M9d-Tf-E9b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W0X-fW-00g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74n-7M-rF8">
+                                <rect key="frame" x="169.33333333333334" y="433" width="75.666666666666657" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IQN-rc-tF3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="74n-7M-rF8" firstAttribute="centerY" secondItem="W0X-fW-00g" secondAttribute="centerY" id="D6q-ZW-LZQ"/>
+                            <constraint firstItem="74n-7M-rF8" firstAttribute="centerX" secondItem="W0X-fW-00g" secondAttribute="centerX" id="pgA-Gu-dPb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="profile" id="gY7-Pg-9h7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5S-TH-MNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="1530"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Ldl-m8-mGC">
+            <objects>
+                <viewController id="0fc-2W-bkq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zSU-Lz-VIv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT4-2o-52W">
+                                <rect key="frame" x="172" y="433" width="70" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QVl-ds-QHc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fT4-2o-52W" firstAttribute="centerX" secondItem="zSU-Lz-VIv" secondAttribute="centerX" id="MKl-kT-BRW"/>
+                            <constraint firstItem="fT4-2o-52W" firstAttribute="centerY" secondItem="zSU-Lz-VIv" secondAttribute="centerY" id="cqF-CP-qrN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="ycS-fM-Mq3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ank-Kv-Pcu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="1530"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mcG-Dj-Nmc">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" id="YiT-uP-0Hn" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U3X-k6-cNa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0fc-2W-bkq" kind="relationship" relationship="viewControllers" id="X9Y-2t-Vf3"/>
+                        <segue destination="M9d-Tf-E9b" kind="relationship" relationship="viewControllers" id="lDa-o8-6Ys"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djt-iJ-R3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="803"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="dy0-Pb-ecA">
@@ -245,6 +320,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerButtonDidTap:" destination="hNZ-9l-1cf" eventType="touchUpInside" id="3JJ-KY-noq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHN-bz-Ohe">
                                 <rect key="frame" x="136.66666666666666" y="834.66666666666663" width="140.99999999999997" height="27.333333333333371"/>
