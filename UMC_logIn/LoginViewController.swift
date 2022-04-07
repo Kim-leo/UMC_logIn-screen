@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
         setupAttribute()
     }
     
-    
+    @IBOutlet weak var layerExample: UILabel!
     
     @IBAction func emailTextFieldEditingChanged(_ sender: UITextField) {
         let text = sender.text ?? ""
@@ -39,13 +39,12 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonDidTap(_ sender: UIButton) {
         // 회원가입 정보 전달받아서, 그것과 textField 데이터가 일치하면 로그인하기
         guard let userInfo = userInfo else { return }
-        if userInfo.email == self.email
-            && userInfo.password == self.password {
+        
+        if userInfo.email == self.email && userInfo.password == self.password {
             
             let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
-            
         } else {
             
         }
@@ -56,7 +55,7 @@ class LoginViewController: UIViewController {
         //화면전환
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let registerViewController = storyboard.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterViewController
-//        self.present(registerViewController, animated: true, completion: nil)
+        //self.present(registerViewController, animated: true, completion: nil)
         self.navigationController?.pushViewController(registerViewController, animated: true) //navigationController의 push 기능
         
         

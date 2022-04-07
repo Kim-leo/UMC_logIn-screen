@@ -73,11 +73,11 @@
 				7CA1F94727F6CB2B001B0AAF /* RegisterViewController.swift */,
 				7CA1F94927F6E097001B0AAF /* UiView+Extension.swift */,
 				7CA1F94B27F6E191001B0AAF /* UIViewController+Extension.swift */,
+				7CA1F94D27F6E8CA001B0AAF /* UserInfo.swift */,
 				7CA1F93527F56565001B0AAF /* Main.storyboard */,
 				7CA1F93827F56567001B0AAF /* Assets.xcassets */,
 				7CA1F93A27F56567001B0AAF /* LaunchScreen.storyboard */,
 				7CA1F93D27F56567001B0AAF /* Info.plist */,
-				7CA1F94D27F6E8CA001B0AAF /* UserInfo.swift */,
 			);
 			path = UMC_logIn;
 			sourceTree = "<group>";
