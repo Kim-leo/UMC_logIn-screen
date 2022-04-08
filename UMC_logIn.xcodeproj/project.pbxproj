@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C03183127FED7FD0056598A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C03183027FED7FD0056598A /* HomeViewController.swift */; };
 		7CA1F93027F56565001B0AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1F92F27F56565001B0AAF /* AppDelegate.swift */; };
 		7CA1F93227F56565001B0AAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1F93127F56565001B0AAF /* SceneDelegate.swift */; };
 		7CA1F93727F56565001B0AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA1F93527F56565001B0AAF /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C03183027FED7FD0056598A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7CA1F92C27F56565001B0AAF /* UMC_logIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMC_logIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA1F92F27F56565001B0AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA1F93127F56565001B0AAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C03182F27FED7EA0056598A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7C03183027FED7FD0056598A /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		7CA1F92327F56565001B0AAF = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		7CA1F92E27F56565001B0AAF /* UMC_logIn */ = {
 			isa = PBXGroup;
 			children = (
+				7C03182F27FED7EA0056598A /* Home */,
 				7CA1F92F27F56565001B0AAF /* AppDelegate.swift */,
 				7CA1F93127F56565001B0AAF /* SceneDelegate.swift */,
 				7CA1F94327F6A240001B0AAF /* ColorExtension.swift */,
@@ -158,6 +169,7 @@
 				7CA1F93027F56565001B0AAF /* AppDelegate.swift in Sources */,
 				7CA1F93227F56565001B0AAF /* SceneDelegate.swift in Sources */,
 				7CA1F94E27F6E8CA001B0AAF /* UserInfo.swift in Sources */,
+				7C03183127FED7FD0056598A /* HomeViewController.swift in Sources */,
 				7CA1F94C27F6E191001B0AAF /* UIViewController+Extension.swift in Sources */,
 				7CA1F94A27F6E098001B0AAF /* UiView+Extension.swift in Sources */,
 				7CA1F94427F6A240001B0AAF /* ColorExtension.swift in Sources */,
